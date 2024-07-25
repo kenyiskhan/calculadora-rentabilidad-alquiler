@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Rentabilidad de Inversión en Viviendas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Calculadora de Rentabilidad de Inversión en Viviendas</h1>
+    </header>
+    <main>
+      <form id="calcForm">
+        <div class="form-group">
+          <label for="precioCompra">Precio de Compra:</label>
+          <input type="number" id="precioCompra" required>
+        </div>
+        <div class="form-group">
+          <label for="ingresosMensuales">Ingresos Mensuales por Alquiler:</label>
+          <input type="number" id="ingresosMensuales" required>
+        </div>
+        <div class="form-group">
+          <label for="gastosMensuales">Gastos Mensuales:</label>
+          <input type="number" id="gastosMensuales" required>
+        </div>
+        <div class="form-group">
+          <label for="ocupacion">% de Ocupación:</label>
+          <input type="number" id="ocupacion" required>
+        </div>
+        <div class="form-group">
+          <label for="deducciones">Deducciones Anuales:</label>
+          <input type="number" id="deducciones" required>
+        </div>
+        <div class="form-group">
+          <label for="impuestoRenta">% Impuesto sobre la Renta:</label>
+          <input type="number" id="impuestoRenta" value="19" required>
+        </div>
+        <button type="submit">Calcular Rentabilidad</button>
+      </form>
+      <div id="resultado"></div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
